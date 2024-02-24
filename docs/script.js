@@ -26,4 +26,4 @@ function getCode()
 }
 
 const div = document.querySelector("div");
-div.innerHTML = getCode();
+div.innerHTML = "<mark>"+getCode()+"</mark>";
