@@ -52,5 +52,13 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("countdown").innerHTML =  minutes + "m " + seconds + "s ";
-  
+
+  const div = document.querySelector("div");
+    div.innerHTML = "<mark>"+getCode()+"</mark>";
+    
+  if (distance <= 0) {
+    clearInterval(x);
+    const div = document.querySelector("div");
+    div.innerHTML = "<mark>"+getCode()+"</mark>";
+  }
 }, 1000);
