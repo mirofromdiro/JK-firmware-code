@@ -4,7 +4,7 @@ This code is needed when uploading a firmware for JK BMS in emergency mode. You 
 Or you use this tool.
 
 ## How it works
-1. get current date and hour in the format YYMMDDHH
+1. get current date and hour (UTC) in the format YYMMDDHH
 2. add all numbers
 3. calc sum modulo 10
 4. use result to lookup the digit order in a lookup table:
