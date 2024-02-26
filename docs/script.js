@@ -35,6 +35,7 @@ d.setMinutes (0);
 var countDownDate =new Date();
 countDownDate.setMinutes (countDownDate.getMinutes() + 30);
 countDownDate.setMinutes (0);
+countDownDate.setHours (countDownDate.getHourss() + 1);
 
 // Update the count down every 1 second
 var x = setInterval(function() {
