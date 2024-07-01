@@ -25,6 +25,8 @@ Or you use this tool.
 
 ## How to use
 
+Go to: https://mirofromdiro.github.io/JK-firmware-code/ and enter your serial.
+
 Andy from Off Grid Garage Australia made several videos: <br>
 https://www.youtube.com/watch?v=KznZtqpoles <br>
 https://www.youtube.com/watch?v=b-Hl1G8_qOA 
