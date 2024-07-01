@@ -14,7 +14,7 @@
      <main class="container">
       <h2>All shown codes change at every full hour. They are valid for <span id="countdown"></span></h2>
       <h1>Current JK-BMS-Monitor Force Updating code</h1>
-        <div>unknown</div>
+        <div id="update-code">unknown</div><button id="copyButton1" data-clipboard-target="#update-code">📋</button>
         
         <blockquote>
             This code is used to upload a firmware with JK-BMS-Monitor using the "Force Updating" Button.
@@ -31,8 +31,9 @@
             Please enter your serial number:
         </blockquote>
         <input type="text" id="crcInput" placeholder="Enter at least 10 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')"/>
-        <p>Settings password: <span id="crcOutput">N/A</span></p>
+        <p>Settings password: <span id="crcOutput">N/A</span><button id="copyButton2" data-clipboard-target="#crcOutput">📋</button></p>
      </main>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
      <script src="script.js"></script>
   </body>
 </html>
