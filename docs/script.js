@@ -65,7 +65,7 @@ function crc8_rohc(data) {
   for (var i = 0; i < data.length; i++) {
     crc = crcTable[(crc ^ data.charCodeAt(i)) & 0xff];
   }
-  return crc.toString(16).padStart(2, '0');
+  return crc.toString(16).padStart(2, '0').toUpperCase();
 }
 
 const div = document.querySelector("div");
@@ -116,3 +116,24 @@ document.getElementById("crcInput").addEventListener("input", function (e) {
          document.getElementById("crcOutput").textContent = "N/A";
        }
  });
+
+// Initialize clipboard.js
+var clipboard1 = new ClipboardJS('#copyButton1');
+clipboard1.on('success', function(e) {
+    alert('Code copied to clipboard!');
+    e.clearSelection();
+});
+
+clipboard1.on('error', function(e) {
+    alert('Failed to copy text.');
+});
+
+var clipboard2 = new ClipboardJS('#copyButton2');
+clipboard2.on('success', function(e) {
+    alert('Code copied to clipboard!');
+    e.clearSelection();
+});
+
+clipboard2.on('error', function(e) {
+    alert('Failed to copy text.');
+});
