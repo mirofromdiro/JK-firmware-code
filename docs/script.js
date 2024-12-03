@@ -109,7 +109,7 @@ var x = setInterval(function() {
 document.getElementById("crcInput").addEventListener("input", function (e) {
        const input = e.target.value;
        if (input.length >= 10) {
-         const crc = crc8_rohc(input);
+         const crc = crc8_rohc(input.toUpperCase());
          document.getElementById("crcOutput").innerHTML ="<mark>"+
            getCode() + crc.toString(16).padStart(2, "0")+"</mark>";
        } else {
