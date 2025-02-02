@@ -30,7 +30,7 @@
             This code is used to enter the settings in the JK-BMS-App.
             Please enter your serial number:
         </blockquote>
-        <input type="text" id="crcInput" placeholder="Enter at least 10 digits" oninput="this.value = this.value.replace(/[^0-9a-dA-D]/g, '')"/>
+        <input type="text" id="crcInput" placeholder="Enter at least 10 digits" oninput="this.value = this.value.replace(/[^0-9a-fA-F]/g, '')"/>
         <p>Settings password: <span id="crcOutput">N/A</span><button id="copyButton2" data-clipboard-target="#crcOutput">📋</button></p>
      </main>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
